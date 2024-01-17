@@ -6,7 +6,7 @@ This repository contains a React application, mirroring the design provided in t
 
 ## Live Demo
 
-Check out the live demo of the project [here](web-dev-react-project.netlify.app).
+Check out the live demo of the project [here](https://web-dev-react-project.netlify.app/).
 
 ## Getting Started
 
