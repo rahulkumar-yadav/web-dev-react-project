@@ -1,20 +1,24 @@
-import React from "react";
-import Navbar from "./components/navbar";
-import Navgation from "./components/navgation";
-import CreateFlashCard from "./components/createFlashCard";
-import Faq from "./components/faq";
-import RelationFunction from "./components/relationfunction";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { Home } from './pages';
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home/>,
+    },
+  ]);
 
-const App = () => {
-  return (
-    <div className="container m-auto px-10">
-      <Navbar />
-      <Navgation />
-      <RelationFunction />
-      <CreateFlashCard />
-      <Faq />
-    </div>
-  );
-};
+  return (<>
+    <RouterProvider router={router} />
+    </>
+  )
+}
 
-export default App;
+export default App
